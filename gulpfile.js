@@ -57,6 +57,7 @@ var app_js = [
   'src/editor/namespaces.js',
   'src/editor/utils/*.js',
   'src/editor/**/*.js',
+  'src/editor/**/custom/*.js',
   'src/app/app.js',
   'src/app/app.routes.js',
   'src/app/app.controller.js',

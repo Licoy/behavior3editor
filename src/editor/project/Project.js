@@ -42,6 +42,18 @@
     this.nodes.add(b3.Error, true);
     this.nodes.add(b3.Wait, true);
 
+    this.nodes.add(b3.Log, true);
+    this.nodes.add(b3.Escape, true);
+    this.nodes.add(b3.CounterAttack, true);
+    this.nodes.add(b3.PlayerNear, true);
+    this.nodes.add(b3.HpLess, true);
+    this.nodes.add(b3.TimeDistanceNoPlayer, true);
+    this.nodes.add(b3.IsInitPosition, true);
+    this.nodes.add(b3.GoInitPosition, true);
+    this.nodes.add(b3.UnderActiveAttack, true);
+    this.nodes.add(b3.ChasingPlayers, true);
+    this.nodes.add(b3.PlayerNearDistanceCount, true);
+
     this._applySettings(this._editor._settings);
     this.history.clear();
     this._editor.clearDirty();
