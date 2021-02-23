@@ -73,11 +73,17 @@
     function _create() {
       Mousetrap.bind('ctrl+q', _shortcut_projectclose);
       Mousetrap.bind('ctrl+s', _shortcut_projectsave);
+      Mousetrap.bind('command+s', _shortcut_projectsave);
       Mousetrap.bind('ctrl+z', onUndo);
       Mousetrap.bind('ctrl+shift+z', onRedo);
+      Mousetrap.bind('command+z', onUndo);
+      Mousetrap.bind('command+shift+z', onRedo);
       Mousetrap.bind('ctrl+c', onCopy);
       Mousetrap.bind('ctrl+v', onPaste);
       Mousetrap.bind('ctrl+x', onCut);
+      Mousetrap.bind('command+c', onCopy);
+      Mousetrap.bind('command+v', onPaste);
+      Mousetrap.bind('command+x', onCut);
       Mousetrap.bind('ctrl+d', onDuplicate);
       Mousetrap.bind('del', onRemove);
       Mousetrap.bind('a', onAutoOrganize);
@@ -88,11 +94,17 @@
     function _destroy() {
       Mousetrap.unbind('ctrl+q', _shortcut_projectclose);
       Mousetrap.unbind('ctrl+s', _shortcut_projectsave);
+      Mousetrap.unbind('command+s', _shortcut_projectsave);
       Mousetrap.unbind('ctrl+z', onUndo);
       Mousetrap.unbind('ctrl+shift+z', onRedo);
+      Mousetrap.unbind('command+z', onUndo);
+      Mousetrap.unbind('command+shift+z', onRedo);
       Mousetrap.unbind('ctrl+c', onCopy);
       Mousetrap.unbind('ctrl+v', onPaste);
       Mousetrap.unbind('ctrl+x', onCut);
+      Mousetrap.unbind('command+c', onCopy);
+      Mousetrap.unbind('command+v', onPaste);
+      Mousetrap.unbind('command+x', onCut);
       Mousetrap.unbind('ctrl+d', onDuplicate);
       Mousetrap.unbind('del', onRemove);
       Mousetrap.unbind('a', onAutoOrganize);
