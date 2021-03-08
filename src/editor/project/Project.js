@@ -53,6 +53,8 @@
     this.nodes.add(b3.UnderActiveAttack, true);
     this.nodes.add(b3.ChasingPlayers, true);
     this.nodes.add(b3.PlayerNearDistanceCount, true);
+    this.nodes.add(b3.StopMove, true);
+    this.nodes.add(b3.BloodBack, true);
 
     this._applySettings(this._editor._settings);
     this.history.clear();

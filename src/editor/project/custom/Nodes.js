@@ -58,7 +58,7 @@
 
     CustomRegisterAction("Escape", function(p){
         p.title = "逃跑至<distance>m外(<speed>m/s)";
-        p.parameters = {'speed': 2, 'distance': 5};
+        p.parameters = {'speed': 2, 'distance': 5, 'time':0 };
     });
 
     CustomRegisterAction("CounterAttack", function(p){
@@ -67,13 +67,23 @@
     });
 
     CustomRegisterAction("ChasingPlayers", function(p){
-        p.title = "追击玩家(<speed>m/s)";
-        p.parameters = {'speed': 5};
+        p.title = "追击玩家(<speed>m/s)，使用(<skill_id>)技能在<attack_range>m内";
+        p.parameters = {'speed': 5, 'skill_id':0, 'attack_range':3};
     });
 
     CustomRegisterAction("GoInitPosition", function(p){
         p.title = "回到初始半径(<distance>m)位置";
         p.parameters = {'distance': 5};
+    });
+
+    CustomRegisterAction("StopMove", function(p){
+        p.title = "停止移动";
+        p.parameters = {};
+    });
+
+    CustomRegisterAction("BloodBack", function(p){
+        p.title = "回血至<amount>%";
+        p.parameters = {amount:100};
     });
 
 })();
